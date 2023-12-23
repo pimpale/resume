@@ -1,0 +1,186 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small{#3}} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingShort}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newenvironment{resumeSubheadingList}
+{\begin{itemize}[leftmargin=0.1in, label={}]}
+{\end{itemize}}
+
+\newenvironment{resumeListNoBullet}[1][0.1in]
+{\begin{itemize}[leftmargin=#1, label={}, noitemsep]\begin{small}}
+{\end{small}\end{itemize}\vspace{-15pt}}
+
+\newenvironment{resumeListBulleted}[1][0.17in]
+{\begin{itemize}[leftmargin=#1, noitemsep]\begin{small}}
+{\end{small}\end{itemize}\vspace{-5pt}}
+
+\newcommand{\link}[2]{\textnormal{\color{blue}{\href{#1}{\underline{#2}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Govind Pimpale} \\ \vspace{1pt}
+  \small{
+    (408) 508-1229 $|$
+    \link{mailto:gpimpale29@gmail.com}{gpimpale29@gmail.com} $|$ 
+    \link{https://github.com/pimpale}{github.com/pimpale} $|$
+    \link{https://pimpale.github.io}{pimpale.github.io} $|$
+    \link{https://www.linkedin.com/in/govind-pimpale/}{linkedin.com/in/govind-pimpale}
+  }
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\begin{resumeSubheadingList}
+\resumeSubheadingShort
+  {University of California, Los Angeles}{Exp. Fall 2024 $|$ GPA: 3.874}
+  \begin{resumeListNoBullet}[0.1in]
+    \item \textbf{Major}: B.S. Computer Science and Engineering
+    \item \textbf{Coursework}: Data Structures, Programming Languages, Operating Systems, Linear Algebra, Distributed Systems, Computer Network Fundamentals, Compiler Construction, Machine Learning, Statistics
+  \end{resumeListNoBullet}
+\end{resumeSubheadingList}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{resumeListNoBullet}
+  \item \textbf{Languages}: Python, C++, Rust, Java, Javascript, Typescript, SQL, CUDA
+  \item \textbf{Technologies}: PostgreSQL, Spring Boot, ReactJS, Nginx, Vulkan, Express.js, WebGL, Flask, OpenAI API
+  \item \textbf{Developer Tools}: Git, VS Code, AWS, PyCharm, Jupyter Notebook, Docker, Linux 
+\end{resumeListNoBullet}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\begin{resumeSubheadingList}
+  \resumeSubheading
+    {Machine Learning Researcher}{August 2023 -- Present}
+    {Visual Machines Group $|$ \link{https://visual.ee.ucla.edu}{visual.ee.ucla.edu}}{Los Angeles, CA}
+  \begin{resumeListBulleted}
+    \item Designed and implemented a neural network to predict gaze direction using pictures of the eye from inside a virtual reality headset. The model achieved a total angular error of only 0.85 degrees.
+    \item Conducted research on using gaussian splatting to automatically create convolutional neural network (CNN) layers for 3D data. 
+  \end{resumeListBulleted}
+
+  \resumeSubheading
+    {Machine Learning Researcher}{August 2023 -- Present}
+    {Bolei Zhou Lab $|$ \link{https://boleizhou.github.io}{boleizhou.github.io}}{Los Angeles, CA}
+  \begin{resumeListBulleted}
+    \item Designed and trained an inverse dynamics model (IDM) to predict car steering input from velocity data. Used the IDM to create an offline reinforcement learning dataset, and benchmarked offline RL algorithms on the dataset.
+    \item Collaborated with Prof. Bolei Zhou on a sequence of RL tutorials to teach students policy gradients, deep Q-Networks, TRPO, and PPO using the Metadrive environment. (\link{https://github.com/pimpale/mdt}{github.com/pimpale/mdt})
+  \end{resumeListBulleted}
+
+  \resumeSubheading
+    {Software Engineering Intern}{June 2023 -- Sepetember 2023}
+    {Lacework $|$ \link{https://lacework.com}{lacework.com}}{Mountain View, CA}
+  \begin{resumeListBulleted}
+    \item Created an in-app customer support tool that interfaces with Zendesk to automatically create tickets based on user reports. Collected requirements for the tool from various stakeholders, creating a product requirement document. Designed and implemented the tool using React, Java, and Dropwizard.
+  \end{resumeListBulleted}
+
+  \resumeSubheading
+    {Software Engineering Intern}{July 2022 -- Sepetember 2022}
+    {Alignment Research Center $|$ \link{https://alignment.org}{alignment.org}}{Berkeley, CA}
+  \begin{resumeListBulleted}
+    \item Implemented part of the front end UI to interact with large language models in order to determine if the models display harmful behavior.
+    \item Designed and implemented a synchronization system to propagate updates between clients using WebSockets.
+  \end{resumeListBulleted}
+
+  \resumeSubheading
+    {Software Engineering Intern}{July 2022 -- Sepetember 2022}
+    {Atlas Fellowship $|$ \link{https://atlasfellowship.org}{atlasfellowship.org}}{Berkeley, CA}
+  \begin{resumeListBulleted}
+    \item Implemented a Discord bot to allow participants to make bets using Manifold Markets (manifold.markets).
+    \item Created an online tournament platform for people to compete Python bots that play iterated prisoner's dilemma. Used Postgres, Rust, and React.
+  \end{resumeListBulleted}
+\end{resumeSubheadingList}
+
+\section{Activities}
+\begin{resumeSubheadingList}
+  \resumeSubheadingShort
+    {President $\vert$ AI Safety Club at UCLA} {August 2022 - Present}
+  \begin{resumeListBulleted}
+    \item Founded and managed a research-focused club on the topic of AI safety, which grew from 0 to 70 registered members in less than a year.
+  \end{resumeListBulleted}
+
+  \resumeSubheadingShort
+    {Project Lead $\vert$ Bruinspace (CubeSat club)}{December 2021 - June 2022}
+  \begin{resumeListBulleted}
+    \item Developed control software (C++) for a CubeSat handling attitude control, telemetry and data collection.
+  \end{resumeListBulleted}
+\end{resumeSubheadingList}
+    
+%-------------------------------------------
+\end{document}

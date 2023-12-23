@@ -1,0 +1,228 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Govind Pimpale} \\ \vspace{1pt}
+    \small (408) 508-1229 $|$ \href{mailto:gpimpale29@gmail.com}{\underline{gpimpale29@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/govind-pimpale/}{\underline{linkedin.com/in/govind-pimpale/}} $|$
+    \href{https://github.com/wz-ml}{\underline{github.com/pimpale}} $|$
+    \href{https://pimpale.github.io}{\underline{pimpale.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Los Angeles}{\hspace{-1in}\textbf{Exp. Grad 2025, Computer Science Engineering}}
+      {Bachelor of Science in Computer Science | GPA: 4.0, Tau Beta Pi, Upsilon Pi Epsilon}{}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, Javascript, Typescript, HTML/CSS, C\#, SQL } \\
+     \textbf{Frameworks}{: Tensorflow, Pytorch, Fast.AI, React, Node.js, Bootstrap, Flask, HuggingFace, MongoDB, Unity} \\
+     \textbf{Developer Tools}{: Git, VS Code, Google Cloud Platform (GCP), AWS, PyCharm, Jupyter Notebook, JupyterLab} \\
+     \textbf{Libraries}{: Scikit-Learn, NumPy, Pandas, Matplotlib / Seaborn}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Machine Learning Intern}{Jun. 2023 -- Oct. 2023}
+      {Consensus NLP}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Boosted \textbf{\href{https://consensus.app}{Consensus Search}}'s query speed by over 80\% without losing performance via knowledge distillation of machine learning (ML) models in the search pipeline.}
+        \resumeItem{Improved model performance by re-training old models with emerging techniques (Function-Matching Distillation and Stochastic Weight Averaging).}
+        \resumeItem{Fine-tuned Consensus ChatGPT plugin's ability to handle broad question syntax with automated prompt search.}
+        \resumeItem{Fixed the Consensus Meter's tendency to agree with common misconceptions.}
+        \resumeItem{Built a query expansion model to improve search pipeline performance on questions with inexact wording.}
+
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    \resumeSubheading
+      {AI Researcher}{Jun. 2023 -- Present}
+      {University of California, Los Angeles, Bolei Zhou Lab}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Wrote four tutorials for \textbf{\href{https://github.com/wz-ml/MetaDrive-Tutorials}{a mathematical introduction to human-friendly reinforcement learning}}.}
+        \resumeItem{Built a library of offline Reinforcement Learning (RL) benchmarks on the Metadrive environment.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Bioinformatics Researcher}{Sep. 2022 -- Aug. 2023}
+      {University of California, Los Angeles, Orsulic Labs}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Analyzed the relationship between ovarian cancer cell features and cancer progression with large computer vision models and discovered links between risk-factor genes and tumor appearance.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AlphaZero-Connect4} $|$ \emph{Python, Jupyter, Pytorch, Matplotlib, PIL} $|$ \underline{\textbf{\href{https://github.com/wz-ml/A0-Connect4}{Github}}}}{Dec. 2022 -- Jan. 2023}
+          \resumeItemListStart
+            \resumeItem{Reimplemented the AlphaZero algorithm on Connect-4, which is so far undefeated by humans at AI Safety socials.}
+            \resumeItem{Benchmarked AlphaZero against earlier RL algorithms - DQNs, neuro-evolution, and REINFORCE.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Growing Images with Cellular Automata} $|$ \emph{OpenCV, PyTorch} $|$ \href{https://github.com/wz-ml/cellularimages}{\underline{\textbf{Github}}}}{Apr. 2023 -- May. 2023}
+          \resumeItemListStart
+            \resumeItem{Implemented Neural Cellular Automata trained to produce and regenerate images. Like Conway's Game of Life, the image grows from a single pixel with an RNN as the learned update rule.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Day2Night} $|$ \emph{Python, OpenCV, Keras, Pix2Pix, PIL, Git} $|$ \href{https://github.com/wz-ml/Day2Night-with-Pix2Pix}{\underline{\textbf{Github}}}}{July 2020 -- Oct. 2020}
+          \resumeItemListStart
+            \resumeItem{Trained a computer vision Pix2Pix model to convert day photos to night photos (and vice versa).}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\section{Activities}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {Projects Officer $\vert$ Competitions Track Lead} {Jun. 2023 - Present}
+      {ACM AI}{Los Angeles, CA}
+      \resumeItemListStart
+            \resumeItem{Hosted a 7-week projects track for 30 students to compete in the \href{https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding}{Kaggle Stanford Ribonanza competition}.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Workshops \& Computational Resources Director}{Oct. 2022 – Present}
+      {AI Safety at UCLA}{Los Angeles, CA}
+      \resumeItemListStart
+            \resumeItem{Ran the AI Safety Intro Fellowship, a program to introduce students to the concept of AI alignment and safety.}
+            \resumeItem{Organized UCLA's ML for Alignment Bootcamp, a mathematical workshop to deep-dive into Transformers.}
+            \resumeItem{Maintained software and access on the research workstation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Secretary}{Oct. 2022 – Present}
+      {Engineering Society at UCLA (ESUC)}{Los Angeles, CA}
+      \resumeItemListStart
+            \resumeItem{Hosted UCLA Engineering's 2023 Alumni Coffee Chats and organized the 2023 Spring Engineering Art Gallery.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+
+%-------------------------------------------
+\end{document}

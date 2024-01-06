@@ -36,7 +36,7 @@
 \addtolength{\oddsidemargin}{-0.7in}
 \addtolength{\evensidemargin}{-0.7in}
 \addtolength{\textwidth}{1.4in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.7in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -48,7 +48,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-11pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -144,8 +144,9 @@
     \begin{resumeListBulleted}
       \item Improved user experience by creating an in-app portal to report errors and issues with the Lacework platform.
       This feature automatically creates corresponding customer support tickets on Zendesk whenever a user reports an issue.
-      \item Collaborated with the customer support team and the UX team to develop a product requirements document.
-      Worked with UX, front end and back end teams to design and implement the tool, using React, Java, and PostgreSQL.
+      \item Collaborated with the customer support team and the UX team to develop the design for the tool.
+      Worked with both the front end and back end teams to implement the tool using React, Java, and PostgreSQL.
+      \item Designed and implemented new components for the Lacework UI library using React and Typescript.
     \end{resumeListBulleted}
 
   \item
@@ -155,18 +156,29 @@
     \begin{resumeListBulleted}
       \item Improved the tools researchers utilize to interact with LLM agents by adding live updates to the web interface, 
       so that researchers can view the results of their experiments in real time. Used Websockets, React, Flask, and OpenAI API.
-      \item Improved performance of LLM agents by improving prompting strategies and adding heuristics to select the best completion.
+      \item Increased performance of LLM agents by improving prompting strategies and adding heuristics to select the best completion.
     \end{resumeListBulleted}
 
   \item
     \resumeSubheading
-    {Atlas Fellowship} {\link{https://atlasfellowship.org}{atlasfellowship.org}} {July 2022 -- September 2022}
+    {Atlas Fellowship} {\link{https://atlasfellowship.org}{atlasfellowship.org}} {May 2022 -- July 2022}
     {Software Engineering Intern}   {Berkeley, CA}
     \begin{resumeListBulleted}
       \item Implemented a Discord bot to allow participants to make bets using Manifold Markets. Used Node.js and Firebase.
       \item Created an online tournament platform for people to compete Python bots that play iterated prisoner's dilemma.
       Implemented using Docker API, Postgres, Rust, Typescript, and React. (\link{https://github.com/pimpale/pdarena}{github.com/pimpale/pdarena})
     \end{resumeListBulleted}
+
+  \item
+    \resumeSubheading
+    {Innexgo} {\link{https://pimpale.github.com/innexgo\_technology}{pimpale.github.com/innexgo\_technology}} {August 2018 -- August 2022}
+    {Cofounder}   {San Jose, CA}
+    \begin{resumeListBulleted}
+      \item Designed and built a IoT device to monitor student attendance, as well as a web app to provide teachers with
+      attendance analytics, leading a team of eight developers.
+      \item Used by $\sim$2000 students at my high school, and received thousands of dollars of funding from our school district.
+      \item I used KiCAD to design the PCBs, C++ on the ESP32, and React, Typescript, Java, MySQL for the analytics platform.
+    \end{resumeListBulleted} 
 \end{resumeSubheadingList}
 
 %-----------RESEARCH-----------
@@ -174,17 +186,18 @@
 \begin{resumeSubheadingList}
   \item 
     \resumeSubheading
-    {Visual Machines Group} {\link{https://visual.ee.ucla.edu}{visual.ee.ucla.edu}} {August 2023 -- Present}
+    {Visual Machines Group} {\link{https://visual.ee.ucla.edu}{visual.ee.ucla.edu}} {September 2023 -- Present}
     {Machine Learning Researcher} {UCLA}
     \begin{resumeListBulleted}
       \item Designed and implemented a neural network to predict gaze direction using pictures of the eye from inside a virtual reality headset.
       The model achieved a total angular error of only 0.85 degrees.
       \item Conducted research on using gaussian splatting to automatically create convolutional neural network (CNN) layers for 3D data. 
+      Used C++, CUDA and Pytorch.
     \end{resumeListBulleted}
 
   \item 
     \resumeSubheading
-    {Bolei Zhou Lab} {\link{https://boleizhou.github.io}{boleizhou.github.io}}  {August 2023 -- Present}
+    {Bolei Zhou Lab} {\link{https://boleizhou.github.io}{boleizhou.github.io}}  {March 2023 -- Present}
     {Machine Learning Researcher} {UCLA}
     \begin{resumeListBulleted}
       \item Designed and trained an inverse dynamics model (IDM) to predict car steering input from velocity data.
@@ -210,8 +223,16 @@
     \resumeSubheadingShort
     {WebGL Voxel Game} {\link{https://github.com/pimpale/webgl-voxel-game}{github.com/pimpale/webgl-voxel-game}} {April 2022 --June 2022}
     \begin{resumeListBulleted}
-      \item Implemented a voxel game engine based off of Minecraft using only WebGL and Typescript. 
+      \item Created a voxel game engine based off of Minecraft using only WebGL and Typescript. 
       \item Implemented a chunk system, transparent blocks, lighting, shadows, and a basic physics engine.
+    \end{resumeListBulleted}
+  \item
+    \resumeSubheadingShort
+    {Compugenesis} {\link{https://github.com/pimpale/compugenesis}{github.com/pimpale/compugenesis}} {September 2018 -- March 2019}
+    \begin{resumeListBulleted}
+      \item Created a GPU-accelerated simulation of the growth of various real world crops.
+      \item Simulated soil minerals using a 3D grid of voxels, and plant growth with L-systems. Accelerated using GLSL compute shaders.
+      \item Won Grand Prize at the 2019 Synopsys Science and Technology Championship, and 3rd place at the 2019 Intel International Science and Engineering Fair
     \end{resumeListBulleted}
 
 \end{resumeSubheadingList}
